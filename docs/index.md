@@ -11,7 +11,7 @@ Go to [Canvas](https://hvl.instructure.com/courses/14467) for additional course 
 Go to [Set up your computer](setup.md) for step by step instructions
 
 ### Course notebooks
-The course is based on Jupyter Notebook, a web-based framework to write and present code-based projects. Have a look at https://youtu.be/HW29067qVWk and https://youtu.be/2eCHD6f_phE for short introductions to Jupyter Notebooks.
+The course is based on Jupyter Notebook, a web-based framework to write and present code-based projects. Have a look at [https://youtu.be/HW29067qVWk](https://youtu.be/HW29067qVWk) and [https://youtu.be/2eCHD6f_phE](https://youtu.be/2eCHD6f_phE) for short introductions to Jupyter Notebooks.
 
 Throughout the course you will work with notebooks containing various material and coding exercises. _It is recommended to make copies of the course notebooks before editing_. You can follow the naming convention `my_[name_of_original_notebook].ipynb`.
 
