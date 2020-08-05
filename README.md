@@ -2,9 +2,9 @@
 
 # Machine learning engineering
 
-This is the website of the machine learning part of the course _DAT158: Machine learning engineering and advanced algorithms_ at the [Western Norway University of Applied Sciences](https://www.hvl.no/en/studies-at-hvl/study-programmes/course/dat158), containing code and documentation for the programming parts of the course.
+This is the repo of the machine learning part of the course _DAT158: Machine learning engineering and advanced algorithms_ at the [Western Norway University of Applied Sciences](https://www.hvl.no/en/studies-at-hvl/study-programmes/course/dat158), containing code and documentation for the programming parts of the course.
 
-Go to [Canvas](https://hvl.instructure.com/courses/14467) for additional course information.
+The content is available on GitHub Pages here: [course website](https://alexander.lundervold.com/DAT158ML). Go to [Canvas](https://hvl.instructure.com/courses/14467) for additional course information.
 
 ## Getting started
 
