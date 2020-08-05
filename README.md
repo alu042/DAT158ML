@@ -1,6 +1,6 @@
 ![DAT158 logo](./assets/DAT158-logo.png)
 
-# DAT158ML: Machine learning engineering
+# Machine learning engineering
 
 This is the website of the machine learning part of the course _DAT158: Machine learning engineering and advanced algorithms_ at the [Western Norway University of Applied Sciences](https://www.hvl.no/en/studies-at-hvl/study-programmes/course/dat158), containing code and documentation for the programming parts of the course.
 
@@ -24,4 +24,4 @@ To browse through the course notebooks non-interactively, use jupyter.org's nbvi
 To browse through the notebooks **interactively**, without having to install any software, you can use our Binder:
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/alu042/DAT158ML/master)<br>
-This is the course repo for the 2020 version of _DAT158: Machine learning engineering and advanced algorithms_ at the [Western Norway University of Applied Sciences](https://www.hvl.no/en/studies-at-hvl/study-programmes/course/dat158). It contains the code and other resources from the machine learning part of the course.
+
