@@ -35,11 +35,6 @@ conda env update
 ```bash
 conda activate dat158
 ```
-If you're using Linux or MacOS and the above command fails, run
-```bash 
-source ~/.bash_profile
-``` 
-and try again: `conda activate dat158`.
 
 ### Install a Jupyter kernel
 ```bash
@@ -67,4 +62,5 @@ conda env update
 
 
 # Troubleshooting
+* If you're using GNU/Linux or MacOS and the `conda activate dat158` command fails, run `source ~/.bash_profile` and try again.
 * If you're on a Mac and the `conda env update` command fails with a `gcc` error, install [Xcode](https://developer.apple.com/xcode/resources/) through the App store and use it to install **command line tools**. 
