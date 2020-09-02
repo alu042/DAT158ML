@@ -19,6 +19,7 @@ dependencies:
 - scipy
 - seaborn
 - conda-forge::category_encoders
+- conda-forge::shap
 - hyperopt
 - pip:
   - pip >= 19.0
@@ -28,4 +29,5 @@ dependencies:
   - eli5
   - pdpbox
   - nbdime
+  - pycaret
   
