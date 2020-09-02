@@ -7,10 +7,10 @@ It is recommended to install Python via the [Anaconda Distribution](https://www.
 After installing Anaconda, run `python --version` in a terminal (if you're on Windows, use the "Anaconda Prompt"). If the output contains "Python 3.8" and "Anaconda" then you're ready for the next step.
 
 ## GitHub
-The course material is hosted on the code-sharing platform GitHub (where you're currently reading this). If you're not already registered at GitHub, make a user account now. https://github.com/join. It is recommended to use the platform for your own projects during the course. 
+The course material is hosted on the code-sharing platform GitHub (where you're currently reading this). If you're not already registered at GitHub, make a user account now. [https://github.com/join](https://github.com/join). It is recommended to use the platform for your own projects during the course. 
 
 ## Kaggle
-[Kaggle](https://www.kaggle.com) is an online community of "data scientists", arranging data science competitions and hosting a large number of data sets. We'll make use of Kaggle in DAT158, both for course projects and as a source of data. Make an account here: https://www.kaggle.com. 
+[Kaggle](https://www.kaggle.com) is an online community of "data scientists", arranging data science competitions and hosting a large number of data sets. We'll make use of Kaggle in DAT158, both for course projects and as a source of data. Make an account here: [https://www.kaggle.com](https://www.kaggle.com). 
 
 ## Install and test the course environment
 After installing Anaconda, run through the following steps (on Windows, use the "Anaconda Prompt").
