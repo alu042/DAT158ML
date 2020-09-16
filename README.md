@@ -17,9 +17,9 @@ The course is based on Jupyter Notebook, a web-based framework to write and pres
 
 Throughout the course you will work with notebooks containing various material and coding exercises. _It is recommended to make copies of the course notebooks before editing_. You can follow the naming convention `my_[name_of_original_notebook].ipynb`.
 
-To browse through the course notebooks non-interactively, use jupyter.org's nbviewer by clicking [here](https://nbviewer.jupyter.org/github/alu042/DAT158ML/blob/master/docs/notebooks.ipynb).
+To browse through the course notebooks non-interactively, use jupyter.org's nbviewer by clicking [here](https://nbviewer.jupyter.org/github/alu042/DAT158ML/blob/master/notebooks.ipynb).
 
-<a href="https://nbviewer.jupyter.org/github/alu042/DAT158ML/blob/master/docs/notebooks.ipynb">![](assets/nbviewer.png)</a>
+<a href="https://nbviewer.jupyter.org/github/alu042/DAT158ML/blob/master/notebooks.ipynb">![](assets/nbviewer.png)</a>
 
 To browse through the notebooks **interactively**, without having to install any software, you can use our Binder:
 
