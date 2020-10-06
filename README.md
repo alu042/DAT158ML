@@ -19,7 +19,7 @@ Throughout the course you will work with notebooks containing various material a
 
 To browse through the course notebooks non-interactively, use jupyter.org's nbviewer by clicking [here](https://nbviewer.jupyter.org/github/alu042/DAT158ML/blob/master/notebooks.ipynb).
 
-<a href="https://nbviewer.jupyter.org/github/alu042/DAT158ML/blob/master/notebooks.ipynb">![](assets/nbviewer.png)</a>
+<a href="https://nbviewer.jupyter.org/github/alu042/DAT158ML/blob/master/notebooks.ipynb">![](assets/notebooks.png)</a>
 
 To browse through the notebooks **interactively**, without having to install any software, you can use our Binder:
 
