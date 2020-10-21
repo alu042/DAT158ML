@@ -142,8 +142,9 @@ def prepare_hospital(fn):
     numerical = [col for col in LOS.columns if LOS[col].dtype in ['int64', 'float64']]
     dates = ['vdate', 'discharged']
     
+    
     transformer = make_column_transformer(
-        (categorical, OrdinalEncoder()),
+        (OrdinalEncoder(), categorical),
         remainder='passthrough')
     
     LOS_enc = transformer.fit_transform(LOS)
