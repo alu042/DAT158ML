@@ -1,6 +1,6 @@
 # A very short crash course in web app development using Flask
 
-This is the code shown in the DAT158 video describing a way to deploy machine learning models, using Flask. You can find the video in the course Canvas.
+This is the code shown in the DAT158 video describing a way to deploy machine learning models, using Flask. You can find the video in the course Canvas. The examples will likely not make a great deal of sense without the video, so you should start there.
 
 Deployment is an important part of the course's Module 3, and of Assignment 2.
 
