@@ -10,8 +10,8 @@ The tutorial consists of five examples, building on each other.
 
 - Example 1: A _very_ simple web application using Flask
 - Example 2: Styling the application using Bootstrap
-- Example 3: Web forms using WTForms
-- Example 4: Deploying machine learning models with Flask
+- Example 3: Adding web forms using WTForms
+- Example 4: HospitalApp: Deploying machine learning models with Flask
 - Example 5: Deploying Flask web apps using Heroku
 
 

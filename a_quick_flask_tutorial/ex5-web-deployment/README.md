@@ -1,3 +1,3 @@
-# Deploying HospitalApp to the web using Heroku
+# Deploying Flask web apps using Heroku
 
 > ***TBA***
