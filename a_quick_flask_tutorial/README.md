@@ -1,4 +1,4 @@
-# A very short crash course in Flask
+# A very short crash course in web app development using Flask
 
 This is the code shown in the DAT158 video describing a way to deploy machine learning models, using Flask. You can find the video in the course Canvas.
 
