@@ -1,9 +1,9 @@
 from app import app
-from flask import render_template, session, redirect, url_for
+from flask import render_template, session, redirect, url_for, request
 import pickle
 
 from app.forms import DataForm
-from app.predict import predict
+from app.predict import preprocess, predict, postprocess
 
 
 app.config['SECRET_KEY'] = 'DAT158'
@@ -21,18 +21,33 @@ def index():
     predict. 
     """
 
+
+    # Handle request from form
     form = DataForm()
-    
     if form.validate_on_submit():
 
-        # If the form is submitted, store all the inputs in session
+        # If the form is submitted and validated, store all the 
+        # inputs in session
         for fieldname, value in form.data.items():
-            #print(fieldname, value)
             session[fieldname] = value
 
-        # Make predictions and store in session
-        pred = predict(session)
+
+        # Get additional user data
+        user_info = request.headers.get('User-Agent')
+
+        # Preprocess data
+        data = preprocess(session)
+
+        # Get model outputs 
+        pred = predict(data)
+
+        # Postprocess results
+        pred = postprocess(pred)
+
+        # Create the payload (we use session)
+        session['user_info'] = user_info
         session['pred'] = pred
+
 
         return redirect(url_for('index'))
 

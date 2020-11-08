@@ -39,7 +39,12 @@
 
 <div class='container'>
 
-    <h3>{% if session.get('pred') %} The predicted length of stay in the hospital is {{session.get('pred')}} days {% else %} {% endif %}</h3>
+    <h3>{% if session.get('pred') %} The predicted length of stay in the hospital is {{session.get('pred')['pred']}} days.</h3>
+
+    <h4>Probabilities: {{session.get('pred')['uncertainty']}}
+         {% else %} {% endif %}</h4>
+    <br>
+    <h4>User information: {{session.get('user_info')}}</h4>
 
 </div>
 

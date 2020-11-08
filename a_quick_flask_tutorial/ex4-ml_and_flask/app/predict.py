@@ -10,7 +10,7 @@ import joblib
 model = joblib.load('models/simple_rf_model.joblib')
 
 
-def get_form_data(data):
+def preprocess(data):
     """
     Returns the features entered by the user in the web form. 
 
@@ -79,17 +79,12 @@ def get_form_data(data):
 #######
 
 
-def predict(data, debug=False):
+def predict(data):
     """
     If debug, print various useful info to the terminal.
     """
-    
-    # Get values:
-    values = get_form_data(data)
-
-    if debug: print(f'Feature values: {values}\n')
-
-    # Store them in an array in the correct order:
+ 
+    # Store the data in an array in the correct order:
 
     column_order = ['rcount', 'gender', 'facid', 'eid', 'dialysisrenalendstage', 'asthma',
        'irondef', 'pneum', 'substancedependence', 'psychologicaldisordermajor',
@@ -98,11 +93,7 @@ def predict(data, debug=False):
        'creatinine', 'bmi', 'pulse', 'respiration',
        'secondarydiagnosisnonicd9']
 
-    values = np.array([values[feature] for feature in column_order], dtype=object)
-
-    if debug: 
-            print('Ordered feature values: ')
-            print(list(zip(column_order, values)))
+    data = np.array([data[feature] for feature in column_order], dtype=object)
 
 
     # NB: In this case we didn't do any preprocessing of the data before 
@@ -112,6 +103,33 @@ def predict(data, debug=False):
     # predicting with the trained model. This can be achieved by saving an entire 
     # sckikit-learn pipeline, for example using joblib as in the notebook.
     
-    pred = model.predict(values.reshape(1,-1))
+    pred = model.predict(data.reshape(1,-1))
 
-    return str(pred[0])
+    uncertainty = model.predict_proba(data.reshape(1,-1))
+
+    return pred, uncertainty
+
+
+def postprocess(prediction):
+    """
+    Apply postprocessing to the prediction. E.g. validate the output value, add
+    additional information etc. 
+    """
+
+    pred, uncertainty = prediction
+
+    # Validate. As an example, if the output is an int, check that it is positive.
+    try: 
+        int(pred[0]) > 0
+    except:
+        pass
+
+    # Make strings
+    pred = str(pred[0])
+    uncertainty = str(uncertainty[0])
+
+
+    # Return
+    return_dict = {'pred': pred, 'uncertainty': uncertainty}
+
+    return return_dict
