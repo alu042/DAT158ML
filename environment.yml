@@ -4,6 +4,7 @@ dependencies:
 - pip
 - pytest
 - flask
+- flask-wtf
 - conda-forge::flask-bootstrap
 - ipython
 - ipykernel
