@@ -1,0 +1,1 @@
+web gunicorn hospitalapp:app WEB_CONCURRENCY=1 --preload
