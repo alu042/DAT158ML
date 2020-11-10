@@ -1,3 +1,3 @@
 # Deploying Flask web apps using Heroku
 
-> ***TBA***
+> See the associated video posted to Canvas for details.
